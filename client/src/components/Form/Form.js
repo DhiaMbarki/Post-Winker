@@ -12,9 +12,9 @@ const Form = () => {
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   
   const classes = useStyles();
-  const dispatch = useDispatch() // so when we click "submit" wish is "handlesubmit" we goona use this action to send post request with all the data that the user type it
+  const dispatch = useDispatch() 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { // so when we click "submit"  we goona use this action to send post request with all the data that the user type it
     e.preventDefault();
 
    dispatch(createPost(postData));
