@@ -6,7 +6,7 @@ import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
 import PostWinker from './images/PostWinker.png';
 import useStyles from './styles'
-import useStyles from './styles';
+
 
 const App = () => {
     const classes = useStyles();
