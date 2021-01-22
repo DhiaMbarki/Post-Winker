@@ -1,3 +1,6 @@
+import express from 'express';
+import mongoose from 'mongoose';
+
 // to keep our work more clean and easy we past all the routes in the post of controllers
 import PostMessage from '../models/postMessage.js'
 
@@ -42,8 +45,14 @@ export const updatePost = async (req, res) => {
     if (!mongoose.Types.ObjectId.isValid(_id)) return res.status(404).send('No post with that id');
 
     const updatedPost = await PostMessage.findByIdAndUpdate(_id, post, { new: true});
-
-   
-
     res.json(updatedPost);
 }
+
+
+
+
+
+
+
+
+
