@@ -10,7 +10,7 @@ import moment from 'moment';
 
 import useStyles from './styles';
 import {useDispatch} from 'react-redux';
-import {deletePost} from '../../../actions/posts'
+import {deletePost} from '../../../actions/Posts'
 
 
 const Post = ({ post, setCurrentId }) => {
