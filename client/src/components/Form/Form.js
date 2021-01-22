@@ -6,9 +6,9 @@ import useStyles from './styles';
 
 import {createPost} from '../../actions/Posts';
 
+//Get the Current Id from app.js
 
-
-const Form = () => {
+const Form = ({currentId, setCurrentId}) => {
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   
   const classes = useStyles();
